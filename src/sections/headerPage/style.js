@@ -21,6 +21,30 @@ export const ContainerHeader = styled.div`
     gap: 24px;
   }
 
+  .links ul li a {
+    padding-bottom: 4px;
+    position: relative;
+  }
+
+  .links ul li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.1rem;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+  }
+
+  .links ul li a::after {
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+  }
+
+  .links ul li a:hover::after {
+    transform: scale(1, 1);
+  }
+
   .mobile_click {
     display: flex;
     flex-direction: column;
