@@ -27,7 +27,7 @@ export const Contact = () => {
   }
 
   function enviarEmail(nome, email, phone, assunto) {
-    const serviceID = "service_8e4lu08";
+    const serviceID = "service_3di93td";
     const templateID = "template_fwgzx9p";
     const userID = "Cfe9e-hDgeIhemQYY";
 
@@ -78,12 +78,8 @@ export const Contact = () => {
           <p className="overline16 brown_light margin4">CONTACT</p>
           <h2 className="heading40 brown margin8">Entre em contato comigo!</h2>
           <p className="body16 primary">
-            Fique a vontade para{" "}
-            <strong>
-              entrar em contato comigo para qualquer tipo de assunto,
-            </strong>{" "}
-            tanto pelo formulário quanto para qualquer outro meio,{" "}
-            <strong>estou disponível!</strong>{" "}
+            Fique a vontade para <strong>entrar em contato comigo para qualquer tipo de assunto,</strong>{" "}
+            tanto pelo formulário quanto para qualquer outro meio, <strong>estou disponível!</strong>{" "}
           </p>
           <div className="socials">
             <a target="_blank" href="https://wa.me/5513982051521">
@@ -124,12 +120,7 @@ export const Contact = () => {
                 setEmaill(e.target.value);
               }}
             />
-            <input
-              type="tel"
-              placeholder="Telefone"
-              value={phoneNumber}
-              onChange={handleInputChange}
-            />
+            <input type="tel" placeholder="Telefone" value={phoneNumber} onChange={handleInputChange} />
             <input
               type="text"
               placeholder="Assunto"
@@ -143,8 +134,7 @@ export const Contact = () => {
               onClick={(e) => {
                 e.preventDefault();
                 handleSubmit(e);
-              }}
-            >
+              }}>
               ENVIAR
             </button>
           </form>

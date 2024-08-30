@@ -10,7 +10,7 @@ export const Hero = () => {
         <div className="content">
           <h5 className="heading18 white">Olá, eu sou o</h5>
           <h1 className="heading56 white">Victor Rocha</h1>
-          <h4 className="heading24 white">Desenvolvedor front end</h4>
+          <h1 className="heading24 white">Desenvolvedor front end</h1>
           <div className="buttons">
             <a href="https://wa.me/5513982051521" target="_blank">
               <button className="button button14 ajust_gap button_primary">
